@@ -1,14 +1,23 @@
 :root {
     /* --color-primary: #2584ff; */
     --color-primary: #262A56;
+    --color-primary-hover: #3c406e;
     /* --color-secondary: #00d9ff; */
     --color-secondary: #E3CCAE;
+    --color-secondary-hover: #dfd2c1;
     /* --color-accent: #ff3400; */
     --color-accent: #B8621B;
+    --color-accent-hover: #be7c45;
     --color-headings: #1b0760;
     --color-body: #918ca4;
     --color-white: #fff;
     --color-iconbg: #f3f9fa;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
 }
 
 /* Typography */
@@ -173,4 +182,69 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Buttons */
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--primary:hover {
+    background: var(--color-primary-hover);
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.btn--secondary:hover {
+    background: var(--color-secondary-hover);
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: var(--color-white);
+}
+
+.btn--accent:hover {
+    background: var(--color-accent-hover);
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--outline {
+    background: var(--color-white);
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: var(--color-white);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem ;
+    }
 }
