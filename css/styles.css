@@ -7,6 +7,7 @@
     --color-accent: #B8621B;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-white: #fff;
 }
 
 /* Typography */
@@ -74,9 +75,9 @@ a {
 
 .link-arrow {
     color: var(--color-accent);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -93,4 +94,29 @@ a {
     .link-arrow {
         font-size: 1.5rem;
     }
+}
+
+
+/* Badges */
+
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap; /*this prevents the text on the badge from wrapping to the next line*/
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.badge--secondary {
+    background: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.badge--small {
+    font-size: 1.6rem;
 }
