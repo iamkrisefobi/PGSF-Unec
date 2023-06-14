@@ -41,6 +41,7 @@ h2,
 h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -629,7 +630,7 @@ a {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -695,3 +696,53 @@ a {
         border: 0;
     }
 }
+
+
+/* Hero */
+.hero {
+    background-image: url(../images/banner-prayer@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+  /* Media query for high DPR devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+        background-image: url(../images/banner-prayer@2x.jpg);
+    }
+}
+
+/* Media query for ultra-high DPR devices */
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    .hero {
+        background-image: url(../images/banner-prayer@3x.jpg);
+    }
+}
+
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+
+.hero__heading {
+    font-size: 5rem;
+}
+
+.hero__text {
+    background: rgba(0, 21, 48, 0.3);
+    padding: 0 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero__content {
+        text-align: left;
+    }
+}
+
