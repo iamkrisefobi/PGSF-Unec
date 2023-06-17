@@ -26,6 +26,7 @@
     box-sizing: border-box;
 }
 
+
 /* Typography */
 html {
     font-size: 62.5%;
@@ -115,7 +116,6 @@ a {
 
 
 /* Badges */
-
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -140,7 +140,6 @@ a {
 
 
 /* List */
-
 .list {
     list-style: none;
     padding-left: 0;
@@ -294,7 +293,6 @@ a {
     color: var(--color-white);
 }
 
-
 @media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem ;
@@ -352,8 +350,8 @@ a {
     .input {
         font-size: 1.5rem;
     }
-
 }
+
 
 /* Cards */
 .card {
@@ -469,6 +467,7 @@ a {
     }
 }
 
+
 /* Media */
 .media {
     display: flex;
@@ -485,6 +484,7 @@ a {
 .media__image {
     margin-top: 1rem;
 }
+
 
 /* Quotes */
 .quote {
@@ -535,6 +535,7 @@ a {
     }
 }
 
+
 /* Grids */
 .grid {
     display: grid;
@@ -583,6 +584,7 @@ a {
     }
 }
 
+
 /* Callouts */
 .callout {
     padding: 4rem;
@@ -625,6 +627,7 @@ a {
     }
 }
 
+
 /* Collapsibles */
 .collapsible__header {
     display: flex;
@@ -656,6 +659,7 @@ a {
     max-height: 100vh;
     opacity: 1;
 }
+
 
 /* Blocks */
 .block {
@@ -694,6 +698,7 @@ a {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 /* Navigation Bar */
 .nav {
@@ -782,14 +787,12 @@ a {
     }
 }
 
-
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
     letter-spacing: 1px;
     margin: 2rem 0 5rem;
 }
-
 
 .hero__heading {
     font-size: 5rem;
@@ -799,7 +802,6 @@ a {
     background: rgba(0, 21, 48, 0.3);
     padding: 0 2rem;
 }
-
 
 @media screen and (min-width: 768px) {
     .hero__content {
@@ -852,4 +854,30 @@ a {
 .block-plans .card {
     max-width: 500px;
     margin: 0 auto;
+}
+
+
+/* Events */
+.event {
+    gap: 4rem 2rem;
+    margin: 10rem 0;
+}
+
+.event:first-of-type {
+    margin-top: 6rem;
+}
+
+.event__heading {
+    margin: 1rem 0;
+}
+
+.event__image {
+    width: 100%;
+    height: 35rem;
+}
+
+@media screen and (min-width: 768px) {
+    .event:nth-last-of-type(even) .event__content {
+        order: 2;
+    }
 }
