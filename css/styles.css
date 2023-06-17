@@ -881,3 +881,17 @@ a {
         order: 2;
     }
 }
+
+
+/* Excos Block */
+.exco {
+    gap: 4rem;
+    margin: 5rem 0;
+} 
+
+.exco__image {
+    width: 6.5rem;
+    height: 6.5rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
