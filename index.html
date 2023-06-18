@@ -16,10 +16,13 @@
 
     <!-- link to dancing script font from google -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
-
+    
     <!-- link to css files -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+  
+    <!-- link to AOS Animation library (css) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -44,7 +47,7 @@
 
   <!-- Hero section starts-->
   <section class="container block block--dark hero" id="hero">
-    <header class="block__header hero__content">
+    <header class="block__header hero__content" data-aos="fade-down">
         <div class="hero__text">
             <h1 class="block__heading hero__heading">"I can do all things through him who gives me strength..."</h1>
             <p class="hero__tagline">Philippians 4:13</p>
@@ -55,7 +58,7 @@
 <!-- hero section ends -->
 
 <!-- Group starts here -->
-<section class="block container block-groups" id="block-groups">
+<section class="block container block-groups" id="block-groups" data-aos="fade-up">
   <header class="block__header">
       <h2>Join any of the groups</h2>
       <p>Join a fellowship group and serve the Lord while ye are young</p>
@@ -84,12 +87,12 @@
 
 <!-- Events starts here -->
 <section class="block block--dark container block-events" id="block-events">
-  <header class="block__header">
+  <header class="block__header" data-aos="fade-up">
     <h2>Upcoming Events</h2>
     <p>Lets cross out the following dates on our calendar for the Lord</p>
   </header>
   <article class="grid grid--1x2 event">
-    <div class="event__content">
+    <div class="event__content" data-aos="fade-right" data-aos-easing="ease-in-sine">
       <span class="icon-container">
         <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#menu"></use>
@@ -106,7 +109,7 @@
     </picture>
   </article>
   <article class="grid grid--1x2 event">
-    <div class="event__content">
+    <div class="event__content" data-aos="fade-right" data-aos-easing="ease-in-sine">
       <span class="icon-container">
         <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#menu"></use>
@@ -123,7 +126,7 @@
     </picture>
   </article>
   <article class="grid grid--1x2 event">
-    <div class="event__content">
+    <div class="event__content" data-aos="fade-right" data-aos-easing="ease-in-sine">
       <span class="icon-container">
         <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#menu"></use>
@@ -140,7 +143,7 @@
     </picture>
   </article>
   <article class="grid grid--1x2 event">
-    <div class="event__content">
+    <div class="event__content" data-aos="fade-right" data-aos-easing="ease-in-sine">
       <span class="icon-container">
         <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#menu"></use>
@@ -161,7 +164,7 @@
 
 <!-- Excos starts here -->
 <section class="container block block-excos" id="block-excos">
-  <header class="block__header">
+  <header class="block__header" data-aos="fade-up">
     <h2>Meet Our Excos</h2>
     <p>Meet our present 2022/2023 Excos and know a bit about them</p>
   </header>
@@ -307,6 +310,13 @@
 </footer>
 <!-- Footer ends here -->
 
+  <!-- link to main js file -->
   <script src="js/main.js"></script>
+
+  <!-- link to AOS Animation library (js file) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

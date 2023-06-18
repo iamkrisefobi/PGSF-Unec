@@ -751,6 +751,7 @@ a {
 }
 
 .nav__item {
+    text-align: center;
     padding: 0.5rem 2vw;
     border-bottom: 1px solid #222;
 }
