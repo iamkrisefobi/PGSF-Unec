@@ -11,12 +11,302 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- link to Arizonia font from google -->
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <!-- link to dancing script font from google -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- link to css files -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
+
+  <!-- navbar starts -->
+  <header>
+    <nav class="container nav collapsible">
+      <a class="nav__brand" href="/"><span class="logo">PGSF Unec</span></a>
+      <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#hero">Home</a></li>
+          <li class="nav__item"><a href="#hero">Bible Study</a></li>
+          <li class="nav__item"><a href="#block-groups">Groups</a></li>
+          <li class="nav__item"><a href="#block-events">Events</a></li>
+          <li class="nav__item"><a href="#block-excos">Members</a></li>
+          <li class="nav__item"><a href="#">Blogs</a></li>
+      </ul>
+  </nav>
+  </header>
+  <!-- navbar ends -->
+
+  <!-- Hero section starts-->
+  <section class="container block block--dark hero" id="hero">
+    <header class="block__header hero__content">
+        <div class="hero__text">
+            <h1 class="block__heading hero__heading">"I can do all things through him who gives me strength..."</h1>
+            <p class="hero__tagline">Philippians 4:13</p>
+        </div>
+        <a href="#" class="btn btn--accent btn--stretched">Worship with us</a>
+    </header>
+</section>
+<!-- hero section ends -->
+
+<!-- Group starts here -->
+<section class="block container block-groups" id="block-groups">
+  <header class="block__header">
+      <h2>Join any of the groups</h2>
+      <p>Join a fellowship group and serve the Lord while ye are young</p>
+  </header>
+  <div class="input-group">
+      <input type="text" class="input" placeholder="Search for groups...">
+      <span class="icon-container icon-container--accent icon-container--small">
+        <button class= "btn btn--accent btn--round">
+          <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </span>
+  </div>
+  <ul class="list block-groups__lists">
+      <li><span class="badge badge--primary">Choir</span></li>
+      <li>Evangelism</li>
+      <li>Prayer</li>
+      <li>Organizing</li>
+      <li>Drama</li>
+      <li>Bible Study</li>
+      <!-- <li>More...</li> -->
+  </ul>
+</section>
+<!-- Group ends here -->
+
+<!-- Events starts here -->
+<section class="block block--dark container block-events" id="block-events">
+  <header class="block__header">
+    <h2>Upcoming Events</h2>
+    <p>Lets cross out the following dates on our calendar for the Lord</p>
+  </header>
+  <article class="grid grid--1x2 event">
+    <div class="event__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <h3 class="event__heading">Sendforth Annivesary</h3>
+      <p class="event__description">We are sending forth our members from the 2021/2022 academic session whom have dedicated their time in serving the Lord.</p>
+      <a href="#" class="link-arrow">More Info</a>
+    </div>
+    <picture>
+      <source type="image/webp" srcset="images/church-events@1x.webp 1x, images/church-event@2x.webp 2x">
+      <source type="image/jpg" srcset="images/church-events@1x.jpg 1x, images/church-event@2x.jpg 2x">
+      <img class="event__image" src="images/church-event@2x.jpg" alt="sendforth_advert">
+    </picture>
+  </article>
+  <article class="grid grid--1x2 event">
+    <div class="event__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <h3 class="event__heading">Election of new excos</h3>
+      <p class="event__description">"Choose for yourselves wise, understanding, and experienced men to be your leaders." - Deuteronomy 1:13</p>
+      <a href="#" class="link-arrow">More Info</a>
+    </div>
+    <picture>
+      <source type="image/webp" srcset="images/church-events@1x.webp 1x, images/church-event@2x.webp 2x">
+      <source type="image/jpg" srcset="images/church-events@1x.jpg 1x, images/church-event@2x.jpg 2x">
+      <img class="event__image" src="images/church-event@2x.jpg" alt="sendforth_advert">
+    </picture>
+  </article>
+  <article class="grid grid--1x2 event">
+    <div class="event__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <h3 class="event__heading">Bible Study Challenge</h3>
+      <p class="event__description">"Study to show yourself approved unto God, a worker that needs not to be ashamed." - 2 Timothy 2:15</p>
+      <a href="#" class="link-arrow">More Info</a>
+    </div>
+    <picture>
+      <source type="image/webp" srcset="images/church-events@1x.webp 1x, images/church-event@2x.webp 2x">
+      <source type="image/jpg" srcset="images/church-events@1x.jpg 1x, images/church-event@2x.jpg 2x">
+      <img class="event__image" src="images/church-event@2x.jpg" alt="sendforth_advert">
+    </picture>
+  </article>
+  <article class="grid grid--1x2 event">
+    <div class="event__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <h3 class="event__heading">Christmas Carol 2023!!!</h3>
+      <p class="event__description">"Singing praises, we celebrate the birth of our Savior, filling hearts with joy and heavenly melodies."</p>
+      <a href="#" class="link-arrow">More Info</a>
+    </div>
+    <picture>
+      <source type="image/webp" srcset="images/church-events@1x.webp 1x, images/church-event@2x.webp 2x">
+      <source type="image/jpg" srcset="images/church-events@1x.jpg 1x, images/church-event@2x.jpg 2x">
+      <img class="event__image" src="images/church-event@2x.jpg" alt="sendforth_advert">
+    </picture>
+  </article>
+</section>
+<!-- Events ends here -->
+
+<!-- Excos starts here -->
+<section class="container block block-excos" id="block-excos">
+  <header class="block__header">
+    <h2>Meet Our Excos</h2>
+    <p>Meet our present 2022/2023 Excos and know a bit about them</p>
+  </header>
+  <div class="grid grid--1x2 exco">
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-female.jpg" alt="">
+        </div>
+        <div class="media__body">
+          <h3 class="media__title">Mary Moses</h3>
+          <p class="exco__info">Mary Moses is a Msc. Student in the Department of Accounting. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-male2.jpg" alt="">
+      </div>
+        <div class="media__body">
+          <h3 class="media__title">Efobi Christian</h3>
+          <p class="exco__info">Efobi Christian is a Phd Student in the Department of Architecture. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-male1.jpg" alt="">
+      </div>
+        <div class="media__body">
+          <h3 class="media__title">Peter James</h3>
+          <p class="exco__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-female2.jpg" alt="">
+      </div>
+        <div class="media__body">
+          <h3 class="media__title">Akanji Grace</h3>
+          <p class="exco__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-female.jpg" alt="">
+        </div>
+        <div class="media__body">
+          <h3 class="media__title">Mary Moses</h3>
+          <p class="exco__info">Mary Moses is a Msc. Student in the Department of Accounting. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exco__content">
+      <div class="media">
+        <div class="media__image">
+          <img class="exco__image" src="images/exco-male2.jpg" alt="">
+      </div>
+        <div class="media__body">
+          <h3 class="media__title">Efobi Christian</h3>
+          <p class="exco__info">Efobi Christian is a Phd Student in the Department of Architecture. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Excos ends here -->
+
+<!-- Footer starts here -->
+<footer class="block block--dark footer" id="footer">
+  <div class="container grid footer__sections">
+    <section class="collapsible collapsible--expanded footer__section">
+      <header class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">Bible Study</h2>
+          <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Bible 1</a></li>
+          <li><a href="#">Bible 2</a></li>
+          <li><a href="#">Bible 3</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="collapsible footer__section">
+      <header class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">Groups</h2>
+          <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Choir</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Prayer</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="collapsible footer__section">
+      <header class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">Events</h2>
+          <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Event 1</a></li>
+          <li><a href="#">Event 2</a></li>
+          <li><a href="#">Event 3</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="collapsible footer__section">
+      <header class="collapsible__header">
+          <h2 class="collapsible__heading footer__heading">Blogs</h2>
+          <svg class="icon icon--primary collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+      </header>
+      <div class="collapsible__content">
+        <ul class="list">
+          <li><a href="#">Blog 1</a></li>
+          <li><a href="#">Blog 2</a></li>
+          <li><a href="#">Blog 3</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer__brand">
+      <img src="images/logo.svg" alt="">
+      <p class="footer__copright">Copyright 2023 iamkrisefobi.com</p>
+    </section>
+  </div>
+</footer>
+<!-- Footer ends here -->
+
   <script src="js/main.js"></script>
 </body>
 </html>
