@@ -27,8 +27,8 @@
 
 /* Swiper js style */
 .swiper {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .swiper-pagination-bullet-active {
@@ -53,18 +53,18 @@ html {
 }
 
 body {
+    color: var(--color-body);
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    color: var(--color-body);
 }
 
 h1,
 h2,
 h3 {
     color: var(--color-headings);
-    margin-bottom: 1rem;
     line-height: 1.1;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -173,16 +173,15 @@ a {
 }
 
 .list--tick {
+    color: var(--color-headings);
     list-style-image: url(../icons/tick.svg);
     padding-left: 3rem;
-    color: var(--color-headings);
 }
 
 .list--tick .list__item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
-
 
 @media screen and (min-width: 1024px) {
     .list--tick .list__item {
@@ -217,19 +216,19 @@ a {
 }
 
 .icon-container {
+    align-items: center;
     background: var(--color-iconbg);
-    width: 64px;
-    height: 64px;
     border-radius: 100%;
     display: inline-flex;
+    height: 64px;
     justify-content: center;
-    align-items: center;
+    width: 64px;
 }
 
 .icon-container--small {
-    width: 50px;
     height: 50px;
     padding: 1.5rem;
+    width: 50px;
 }
 
 .icon-container--primary {
@@ -252,26 +251,26 @@ a {
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
+    margin: 1rem 0;
     outline: 0;
     padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
-    margin: 1rem 0;
 }
 
 .btn--round {
-    height: 5rem;
-    width: 5rem;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 5rem;
     justify-content: center;
     padding: 0;
+    width: 5rem;
 }
 
 .btn .icon {
-    width: 2.5rem;
     height: 2.5rem;
+    width: 2.5rem;
 }
 
 .btn--primary {
@@ -307,14 +306,14 @@ a {
 }
 
 .btn--block {
-    width: 100%;
     display: inline-block;
+    width: 100%;
 }
 
 .btn--outline {
     background: var(--color-white);
-    color: var(--color-headings);
     border: 2px solid var(--color-headings);
+    color: var(--color-headings);
 }
 
 .btn--outline:hover {
@@ -358,9 +357,9 @@ a {
 }
 
 .input .icon {
-    width: 3rem;
     height: 3rem;
     vertical-align: middle;
+    width: 3rem;
 }
 
 ::placeholder {
@@ -424,9 +423,9 @@ a {
 
 .plan__name {
     color: var(--color-white);
-    margin: 0;
-    font-weight: 500;
     font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .plan__price {
@@ -436,15 +435,15 @@ a {
 .plan__billing-cycle {
     font-size: 2.4rem;
     font-weight: 300;
-    opacity: 0.8;
     margin-right: 1rem;
+    opacity: 0.8;
 }
 
 .plan__description {
+    display: block;
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
-    display: block;
 }
 
 .plan .list__item {
@@ -461,11 +460,11 @@ a {
 
 .plan--popular .card__header::before {
     content: url(../icons/popular.svg);
-    width: 40px;
     display: inline-block;
     position: absolute;
-    top: -6px;
     right: 5%;
+    top: -6px;
+    width: 40px;
 }
 
 .plan:hover {
@@ -520,9 +519,9 @@ a {
 
 /* Quotes */
 .quote {
+    color: var(--color-body-darker);
     font-size: 3rem;
     font-style: italic;
-    color: var(--color-body-darker);
     line-height: 1.3;
 }
 
@@ -543,15 +542,15 @@ a {
 
 .quote__company {
     color: var(--color-body);
-    margin-top: 1rem;
-    opacity: .4;
     font-size: 2rem;
     font-style: normal;
+    margin-top: 1rem;
+    opacity: .4;
 }
 
 .quote__line {
-    position: relative;
     bottom: 10px;
+    position: relative;
 }
 
 @media screen and (min-width: 1024px) {
@@ -588,10 +587,6 @@ a {
 
 
 /* Testimonials */
-.testimonial {
-    /* box-shadow: 0 5px 10px 5px #f3f3f3; */
-}
-
 .testimonial__slide {
     border-radius: 7px;
 }
@@ -616,8 +611,8 @@ a {
 
 .testimonial__image > .icon-container {
     position: absolute;
-    top: 3rem;
     right: -32px;
+    top: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -652,8 +647,8 @@ a {
 
 /* Callouts */
 .callout {
-    padding: 4rem 2rem;
     border-radius: 5px;
+    padding: 4rem 2rem;
 }
 
 .callout--primary {
@@ -664,13 +659,13 @@ a {
 
 .callout__heading{ 
     color: var(--color-primary-dark);
-    margin-top: 0;
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .callout .btn {
-    justify-self: center;
     align-self: center;
+    justify-self: center;
 }
 
 .callout__content {
@@ -700,24 +695,24 @@ a {
 }
 
 .collapsible__heading {
-    margin-top: 0;
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .collapsible__chevron {
-    transform: rotate(-90deg);
+    transform: rotate(0);
     transition: transform 0.3s;
 }
 
 .collapsible__content {
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
+    overflow: hidden;
     transition: all 0.3s;
 }
 
 .collapsible--expanded .collapsible__chevron {
-    transform: rotate(0);
+    transform: rotate(90deg);
 }
 
 .collapsible--expanded .collapsible__content {
@@ -733,9 +728,9 @@ a {
 }
 
 .block__header {
-    text-align: center;
     margin-bottom: 4rem;
     margin-top: 5rem;
+    text-align: center;
 }
 
 .block__heading {
@@ -753,16 +748,6 @@ a {
     color: var(--color-white);
 }
 
-.block--skewed-right {
-    padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-}
-
-.block--skewed-left {
-    padding-bottom: cal(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -778,30 +763,30 @@ a {
 
 /* Navigation Bar */
 .nav {
+    align-items: center;
     background: var(--color-primary-dark);
     box-shadow: 0 0 5px 2px #f3f3f3;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
+    justify-content: space-between;
     left: 0;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
 
 .nav__list {
-    width: 100%;
     margin: 0;
+    width: 100%;
 }
 
 .nav__item {
-    text-align: center;
-    padding: 0.5rem 2vw;
     border-bottom: 1px solid #222;
+    padding: 0.5rem 2vw;
+    text-align: center;
 }
 
 .nav__item > a {
@@ -814,15 +799,15 @@ a {
 }
 
 .nav__toggler {
+    cursor: pointer;
     opacity: 0.5;
     transition: box-shadow 0.15s;
-    cursor: pointer;
 }
 
 .nav.collapsible--expanded .nav__toggler {
-    opacity: 1;
-    box-shadow: 0 0 0 3px #666;
     border-radius: 5px;
+    box-shadow: 0 0 0 3px #666;
+    opacity: 1;
 }
 
 .nav__brand {
@@ -836,11 +821,11 @@ a {
     }
 
     .nav__list {
-        width: auto;
         display: flex;
         font-size: 1.6rem;
         max-height: 100%;
         opacity: 1;
+        width: auto;
     }
 
     .nav__item {
@@ -852,11 +837,10 @@ a {
 /* Hero */
 .hero {
     background-image: url(../images/banner-prayer@1x.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 4rem;
-    
 }
 
   /* Media query for high DPR devices */
@@ -874,17 +858,17 @@ a {
 }
 
 .hero__tagline {
-    font-size: 2rem;
     color: #b9c3cf;
+    font-size: 2rem;
     letter-spacing: 1px;
     margin: 2rem 0 5rem;
 }
 
 .hero__heading {
-    font-size: 4.5rem;
-    line-height: 1.2;
     font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .hero__text {
@@ -901,22 +885,22 @@ a {
 
 /* Groups Block */
 .block-groups .input-group {
-    box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
     border: 1px solid;
+    box-shadow: 0 0 30px 20px #e6ebee;
     margin: 4rem auto;
     max-width: 670px;
 }
 
 .block-groups__lists {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 5rem);
     font-size: 2rem;
     font-weight: 600;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 5rem);
     justify-items: center;
-    max-width: 768px;
     margin: 0 auto;
+    max-width: 768px;
 }
 
 @media screen and (min-width: 425px) {
@@ -947,10 +931,10 @@ a {
 
 /* Events */
 .event {
+    border-bottom: var(--border-seperator);
     gap: 4rem 2rem;
     margin: 2rem 0;
     padding-bottom: 2rem;
-    border-bottom: var(--border-seperator);
 }
 
 .event:first-of-type {
@@ -983,7 +967,6 @@ a {
     .event:nth-last-of-type(even) .event__content {
         order: 2;
     }
-
 }
 
 
@@ -1027,10 +1010,10 @@ a {
 }
 
 .exco__image {
-    width: 6.5rem;
+    border-radius: 100%;
     height: 6.5rem;
     object-fit: cover;
-    border-radius: 100%;
+    width: 6.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1045,10 +1028,6 @@ a {
 
 
 /* Footer */
-.footer {
-    /* background: #232323; */
-}
-
 .footer a {
     color: #777;
     transition: color .3s;
@@ -1063,14 +1042,14 @@ a {
 }
 
 .footer__section {
-    padding: 2rem;
     border-bottom: 1px solid #393939;
+    padding: 2rem;
 }
 
 .footer__heading {
-    text-transform: uppercase;
-    font-weight: 600;
     font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .footer__brand {
@@ -1078,15 +1057,22 @@ a {
     text-align: center;
 }
 
+/* This is for the logo image */
 .footer__brand img {
     /* TODO: Consider refactoring this and applying it to all images*/
     width: 100%;
     max-width: 230px;
 }
 
-.footer__copright {
-    font-size: 1.8rem;
+/* This is for the log text */
+.footer__brand .logo {
     color: var(--color-white);
+}
+
+.footer__copright {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    margin-top: 1rem;
     opacity: 0.3;
 }
 
@@ -1100,8 +1086,8 @@ a {
     }
 
     .footer .collapsible__content {
-        opacity: 1;
         max-height: 100%;
+        opacity: 1;
     }
 
     .footer__brand {
