@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- link to Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
     <!-- link to Arizonia font from google -->
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 
@@ -23,6 +26,7 @@
   
     <!-- link to AOS Animation library (css) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -176,7 +180,12 @@
         </div>
         <div class="media__body">
           <h3 class="media__title">Mary Moses</h3>
-          <p class="exco__info">Mary Moses is a Msc. Student in the Department of Accounting. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+          <ul class="list exco__info">
+            <li><span>Post: </span> Bible Study Cordinator</li>
+            <li><span>Dept: </span>Accounting</li>
+            <li><span>Degree: </span>Msc.</li>
+            <li><span>Hobbies: </span>Reading, Swimming</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -185,10 +194,15 @@
         <div class="media__image">
           <img class="exco__image" src="images/exco-male2.jpg" alt="">
       </div>
-        <div class="media__body">
-          <h3 class="media__title">Efobi Christian</h3>
-          <p class="exco__info">Efobi Christian is a Phd Student in the Department of Architecture. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
-        </div>
+      <div class="media__body">
+        <h3 class="media__title">Efobi Christian C.</h3>
+        <ul class="list exco__info">
+          <li><span>Post: </span> Music Director</li>
+          <li><span>Dept: </span>Architecture</li>
+          <li><span>Degree: </span>Phd.</li>
+          <li><span>Hobbies: </span>Singing, Dancing</li>
+        </ul>
+      </div>
       </div>
     </div>
     <div class="exco__content">
@@ -198,7 +212,12 @@
       </div>
         <div class="media__body">
           <h3 class="media__title">Peter James</h3>
-          <p class="exco__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+          <ul class="list exco__info">
+            <li><span>Post: </span> Organizing Secretary</li>
+            <li><span>Dept: </span>Mass Comm.</li>
+            <li><span>Degree: </span>PGD.</li>
+            <li><span>Hobbies: </span>Singing, Dancing</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -209,7 +228,12 @@
       </div>
         <div class="media__body">
           <h3 class="media__title">Akanji Grace</h3>
-          <p class="exco__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+          <ul class="list exco__info">
+            <li><span>Post: </span> Drama Cordinator</li>
+            <li><span>Dept: </span>Banking and Finance</li>
+            <li><span>Degree: </span>Msc.</li>
+            <li><span>Hobbies: </span>Singing, Dancing</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -219,8 +243,13 @@
           <img class="exco__image" src="images/exco-female.jpg" alt="">
         </div>
         <div class="media__body">
-          <h3 class="media__title">Mary Moses</h3>
-          <p class="exco__info">Mary Moses is a Msc. Student in the Department of Accounting. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+          <h3 class="media__title">Martha Musa</h3>
+          <ul class="list exco__info">
+            <li><span>Post: </span>Prayer Secretary</li>
+            <li><span>Dept: </span>Banking and Finance</li>
+            <li><span>Degree: </span>Msc.</li>
+            <li><span>Hobbies: </span>Singing, Dancing</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -230,14 +259,188 @@
           <img class="exco__image" src="images/exco-male2.jpg" alt="">
       </div>
         <div class="media__body">
-          <h3 class="media__title">Efobi Christian</h3>
-          <p class="exco__info">Efobi Christian is a Phd Student in the Department of Architecture. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam dolor libero animi voluptatibus. Quis ducimus necessitatibus accusantium deleniti a.</p>
+          <h3 class="media__title">Kenneth Okoye</h3>
+          <ul class="list exco__info">
+            <li><span>Post: </span> Organizing Secretary</li>
+            <li><span>Dept: </span>Mass Comm.</li>
+            <li><span>Degree: </span>PGD.</li>
+            <li><span>Hobbies: </span>Singing, Dancing</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- Excos ends here -->
+
+<!-- Testimony starts here -->
+<section class="block block--dark">
+  <header class="block__header">
+    <h2>Testimonies of the Lord's doing</h2>
+    <p>"I will give thanks to you, Lord, with all my heart; I will tell of all your wonderful deeds." - Psalm 9:1 </p>
+  </header>
+  <div class="container testimonial__slider swiper">
+    <div class="testimonial swiper-wrapper">
+      <div class="grid grid--1x2 testimonial__slide swiper-slide">
+        <div class="testimonial__image">
+          <img src="images/iamkrisefobi.jpg" alt="A happy, smiling customer">
+          <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Being a part of this family has being an awesome experience, the love, the word, the dedication, the peace that exits amongst its members is overwhelming.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div> 
+              <div class="media__body">
+                <h3 class="media__title quote__author">iamkrisefobi</h3>
+                <p class="quote__company">CEO, Lim World Construction</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="grid grid--1x2 testimonial__slide swiper-slide">
+        <div class="testimonial__image">
+          <img src="images/exco-female.jpg" alt="A happy, smiling customer">
+          <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Being a part of this family has being an awesome experience, the love, the word, the dedication, the peace that exits amongst its members is overwhelming.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div> 
+              <div class="media__body">
+                <h3 class="media__title quote__author">iamkrisefobi</h3>
+                <p class="quote__company">CEO, Lim World Construction</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="grid grid--1x2 testimonial__slide swiper-slide">
+        <div class="testimonial__image">
+          <img src="images/exco-male1.jpg" alt="A happy, smiling customer">
+          <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Being a part of this family has being an awesome experience, the love, the word, the dedication, the peace that exits amongst its members is overwhelming.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div> 
+              <div class="media__body">
+                <h3 class="media__title quote__author">iamkrisefobi</h3>
+                <p class="quote__company">CEO, Lim World Construction</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="grid grid--1x2 testimonial__slide swiper-slide">
+        <div class="testimonial__image">
+          <img src="images/exco-female2.jpg" alt="A happy, smiling customer">
+          <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Being a part of this family has being an awesome experience, the love, the word, the dedication, the peace that exits amongst its members is overwhelming.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div> 
+              <div class="media__body">
+                <h3 class="media__title quote__author">iamkrisefobi</h3>
+                <p class="quote__company">CEO, Lim World Construction</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="grid grid--1x2 testimonial__slide swiper-slide">
+        <div class="testimonial__image">
+          <img src="images/exco-female3.jpg" alt="A happy, smiling customer">
+          <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Being a part of this family has being an awesome experience, the love, the word, the dedication, the peace that exits amongst its members is overwhelming.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div> 
+              <div class="media__body">
+                <h3 class="media__title quote__author">iamkrisefobi</h3>
+                <p class="quote__company">CEO, Lim World Construction</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+
+  </div>
+</section>
+<!-- Testimony ends here -->
+
+<!-- callout starts here -->
+<div class="container callout callout--white">
+  <div class="grid grid--1x2">
+      <div class="callout__content">
+        <h2 class="callout__heading">Be a part of the family</h2>
+        <p>It really feels awesome to be a part of Gods own family, we welcome you as you join us in fellowship today</p>
+      </div>
+      <a href="#" class="btn btn--accent btn--stretched">Join in Worship</a>
+  </div>
+</div>
+<!-- callout ends here -->
 
 <!-- Footer starts here -->
 <footer class="block block--dark footer" id="footer">
@@ -303,12 +506,18 @@
       </div>
     </section>
     <section class="footer__brand">
-      <img src="images/logo.svg" alt="">
+      <!-- <img src="images/pgsflogo" alt=""> -->
+      <a class="nav__brand" href="/"><span class="logo">PGSF Unec</span></a>
       <p class="footer__copright">Copyright 2023 iamkrisefobi.com</p>
     </section>
   </div>
 </footer>
 <!-- Footer ends here -->
+
+
+
+<!-- link to Swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- link to main js file -->
   <script src="js/main.js"></script>
@@ -318,5 +527,6 @@
   <script>
     AOS.init();
   </script>
+
 </body>
 </html>

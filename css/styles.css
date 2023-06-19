@@ -25,6 +25,21 @@
     box-sizing: border-box;
 }
 
+/* Swiper js style */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-white);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-white);
+    width: 1.2rem;
+}
 
 /* Typography */
 ::selection {
@@ -527,7 +542,8 @@ a {
 }
 
 .quote__company {
-    color: var(--color-headings);
+    color: var(--color-body);
+    margin-top: 1rem;
     opacity: .4;
     font-size: 2rem;
     font-style: normal;
@@ -573,7 +589,20 @@ a {
 
 /* Testimonials */
 .testimonial {
-    padding: 3rem;
+    /* box-shadow: 0 5px 10px 5px #f3f3f3; */
+}
+
+.testimonial__slide {
+    border-radius: 7px;
+}
+
+.testimonial .quote {
+    margin: 3rem 0;
+    font-size: 100%;
+}
+
+.testimonial .quote__text {
+    margin-right: 2vw;
 }
 
 .testimonial__image > img {
@@ -582,6 +611,7 @@ a {
 
 .testimonial__image {
     position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image > .icon-container {
@@ -591,20 +621,38 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .testimonial {
+        padding: 1vw;
+    }
+
+    .testimonial__image {
+        margin: 0;
+    }
+    
+    .testimonial .quote__text {
+        margin-bottom: 3rem;
+    }
+    
     .testimonial .quote,
     .testimonial .quote__author {
         font-size: 2.4rem;
     }
-
+    
     .testimonial .quote {
-        margin-left: 6rem;
+        margin: 5rem 0 0 6rem;
+        line-height: 1.5;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .testimonial .quote__text {
+        margin-bottom: 6rem;
+    }
+}
 
 /* Callouts */
 .callout {
-    padding: 4rem;
+    padding: 4rem 2rem;
     border-radius: 5px;
 }
 
@@ -615,7 +663,7 @@ a {
 
 
 .callout__heading{ 
-    color: var(--color-white);
+    color: var(--color-primary-dark);
     margin-top: 0;
     font-size: 3rem;
 }
@@ -942,7 +990,7 @@ a {
 /* Excos Block */
 .exco {
     gap: 4rem;
-    margin: 5rem 0;
+    margin-top: 5rem;
 } 
 
 .exco__content {
@@ -957,8 +1005,25 @@ a {
     margin: 0;
 }
 
+.exco__content .media__title {
+    transform: translateY(15px);
+    margin-bottom: 3rem;
+}
+
+.exco__content .media__body {
+    margin-right: 0;
+}
+
+.exco__content .media{
+    margin-bottom: 2rem;
+}
+
 .exco__info {
     margin: 0;
+}
+
+.exco__info span {
+    font-weight: bolder;
 }
 
 .exco__image {
@@ -981,7 +1046,7 @@ a {
 
 /* Footer */
 .footer {
-    background: #232323;
+    /* background: #232323; */
 }
 
 .footer a {
@@ -1020,7 +1085,7 @@ a {
 }
 
 .footer__copright {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     color: var(--color-white);
     opacity: 0.3;
 }
