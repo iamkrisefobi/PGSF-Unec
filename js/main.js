@@ -6,7 +6,6 @@ collapsibles.forEach((item) =>
   })
 );
 
-
 // link to swiper js
 var swiper = new Swiper(".testimonial__slider", {
   spaceBetween: 30,
@@ -23,5 +22,5 @@ var swiper = new Swiper(".testimonial__slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  loop:true,
+  loop: true,
 });
