@@ -65,7 +65,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     color: var(--color-headings);
     line-height: 1.1;
     margin-bottom: 1rem;
@@ -84,6 +85,13 @@ h3 {
     font-size: 3rem;
     font-weight: 500;
 }
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
 
 p {
     margin-top: 0;
@@ -104,6 +112,10 @@ p {
     
     h3 {
         font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
     }
     
     p {
@@ -884,6 +896,33 @@ a {
     .hero__content {
         text-align: left;
     }
+}
+
+
+/* Bible Study */
+.study__grid {
+    gap: 2rem 4rem;
+}
+
+.study__content {
+    border-bottom: var(--border-seperator);
+}
+
+.study__text {
+    font-weight: bolder;
+}
+
+.study__questions {
+    margin-top: 0;
+}
+
+.study__questions span {
+    font-weight: bolder;
+}
+
+.study__memory-verse + p {
+    font-style: italic;
+    font-weight: bold;
 }
 
 
