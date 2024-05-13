@@ -52,7 +52,8 @@
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
+    font-size: 50%;
     scroll-behavior: smooth;
 }
 
@@ -736,6 +737,26 @@ a {
     opacity: 1;
 }
 
+.study__content.collapsible__header {
+    /* display: flex; */
+    justify-content:flex-start
+}
+
+.study__content.collapsible--expanded .collapsible__content {
+    max-height: 100%;
+}
+
+.study__content.collapsible--expanded .collapsible__content,
+.study__content.collapsible--expanded .collapsible__header {
+    background: #f7f7f7;
+    /* box-shadow: 0 0 5px 2px #f3f3f3; */
+}
+
+.study__content .collapsible__heading {
+    font-size: unset;
+    /* margin-top: 0; */
+}
+
 
 /* Blocks */
 .block {
@@ -900,6 +921,20 @@ a {
 
 
 /* Bible Study */
+.study__part {
+    color: var(--color-white);
+    background: var(--color-primary-dark);
+    font-size: 2.6rem;
+}
+
+.study__topic {
+    font-size: 2.6rem;
+}
+
+.study__topic:first-of-type {
+    margin-top: 2rem;
+}
+
 .study__grid {
     gap: 2rem 4rem;
 }
@@ -909,7 +944,9 @@ a {
 }
 
 .study__text {
+    font-size: 2.2rem;
     font-weight: bolder;
+    margin-bottom: 0;
 }
 
 .study__questions {
@@ -925,6 +962,11 @@ a {
     font-weight: bold;
 }
 
+@media screen and (min-width: 425px) {
+    .study__topic:first-of-type {
+        margin-top: 3rem;
+    }
+}
 
 /* Groups Block */
 .block-groups .input-group {
